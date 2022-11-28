@@ -1,4 +1,12 @@
-call plug#begin('~/AppData/Local/nvim/plugged')
+let path = '~/AppData/Local/nvim/plugged'
+if has("win64") || has("win32") || has("win16")
+	let path = '~/AppData/Local/nvim/plugged'
+else
+	let path = '~/.config/nvim/plugged'
+endif
+
+
+call plug#begin(path)
   "Enables VSCode like line comments with CTRL+K"
   Plug 'tpope/vim-commentary'
 

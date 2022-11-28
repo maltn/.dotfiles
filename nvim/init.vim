@@ -22,8 +22,25 @@ if has("win64") || has("win32") || has("win16")
   source $HOME/AppData/Local/nvim/mappings/normal.vim
   source $HOME/AppData/Local/nvim/mappings/visual.vim
 else
-  source $HOME/.config/nvim/plug-manager.vim
+  source $HOME/.config/nvim/configs/plug-manager.vim
+  source $HOME/.config/nvim/configs/general.vim
+  source $HOME/.config/nvim/configs/lsp-error-handler.lua
+  source $HOME/.config/nvim/configs/style.vim
+
+  source $HOME/.config/nvim/configs/plugins/nvim-cmp.vim
+  source $HOME/.config/nvim/configs/plugins/visual-multi.vim
+  source $HOME/.config/nvim/configs/plugins/nvim-tree.lua
+  source $HOME/.config/nvim/configs/plugins/bufferline.lua
+  source $HOME/.config/nvim/configs/plugins/treesitter.lua
+  source $HOME/.config/nvim/configs/plugins/mason.lua
+  source $HOME/.config/nvim/configs/plugins/lualine.lua
+  source $HOME/.config/nvim/configs/plugins/telescope.lua
+  source $HOME/.config/nvim/configs/plugins/trouble.lua
+
+  source $HOME/.config/nvim/mappings/input.vim
+  source $HOME/.config/nvim/mappings/normal.vim
+  source $HOME/.config/nvim/mappings/visual.vim
 endif
 
 
-autocmd CursorMoved * :lua echo_diagnostic()
+"autocmd CursorMoved * :lua echo_diagnostic()
