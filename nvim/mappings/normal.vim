@@ -58,7 +58,6 @@ nnoremap <leader>fc <Cmd>Telescope grep_string<CR>
 nnoremap <leader>fb <Cmd>Telescope buffers<CR>
 nnoremap <leader>fh <Cmd>Telescope help_tags<CR>
 
-
-
+nnoremap <leader>ee <Cmd>TroubleToggle<CR>
 
 
